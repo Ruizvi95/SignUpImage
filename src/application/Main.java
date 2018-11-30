@@ -5,9 +5,11 @@ import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+
 
 public class Main extends Application {
 	
@@ -23,6 +25,7 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 
+		primaryStage.initStyle(StageStyle.UNDECORATED);
 		primaryStage.setTitle("SignUp");
 		primaryStage.setScene(new Scene(mypane));
 		primaryStage.show();
